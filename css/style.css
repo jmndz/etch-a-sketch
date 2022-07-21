@@ -1,0 +1,382 @@
+@font-face {
+    font-family: 'ARCADECLASSIC';
+    src: url('ARCADECLASSIC.TTF');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    background-image: url('../img/night.jpg');
+    background-position: 0;
+    background-size: cover;
+    font-family: 'ARCADECLASSIC';
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 150px 50px 150px;
+
+}
+
+.header {
+    flex: 1;
+    display: flex;
+    min-height: 80px;
+    border-radius: 100% 100% 0 0;
+}
+
+.header-left,
+.header-right {
+    flex: 0.5;
+    display: flex;
+    margin-top: 28px;
+}
+
+.header-left-bg-1,
+.header-left-bg-2,
+.header-right-bg-1,
+.header-right-bg-2 {
+    flex: 1;
+    display: flex;
+}
+
+.header-left-bg-1,
+.header-right-bg-2 {
+    background: linear-gradient(rgb(85, 19, 133,0) 70%, rgb(85, 19, 133) 30%);
+}
+
+.header-left-bg-2,
+.header-right-bg-1 {
+    margin-top: 5px;
+    background-color: rgb(85, 19, 133);
+}
+
+
+.header-white-left-1,
+.header-white-left-2,
+.header-white-right-1,
+.header-white-right-2 {
+    flex: 1;
+    background-color: #b7b7a7;
+}
+
+.header-white-left-2,
+.header-white-right-1 {
+    margin: 0 0 10px 0;
+}
+
+.header-white-left-1,
+.header-white-right-2 {
+    margin: 5px 0 10px 0;
+}
+
+.header-white-left-1 {
+    border-radius: 100% 0 0 0;
+}
+
+.header-white-left-2 {
+    border-radius: 0 0 100% 0;
+}
+
+.header-white-right-1 {
+    border-radius: 0 0 0 100%;
+}
+
+.header-white-right-2 {
+    border-radius: 0 100% 0 0;
+}
+
+.header-center {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45% 45% 0 0;
+    background-color: rgb(85, 19, 133);
+}
+
+.header-text{
+    padding: 8px;
+    color: rgb(56, 18, 83);
+    border: 2px solid rgb(56, 18, 83);
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.content {
+    flex: 3;
+    display: flex;
+    min-height: 350px;
+    background: linear-gradient(to right, rgb(0, 0, 0, 0) 10%, 
+                                          rgb(85, 19, 133)20%,  
+                                          rgb(85, 19, 133)80%,
+                                          rgb(255, 255, 255,0) 10%);
+}
+
+.controls-1,
+.controls-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-width: 250px;
+    background-color: rgb(85, 19, 133);
+}
+
+.controls-1-header {
+    flex: .5;
+}
+
+.arrow-button,
+.controls-1-footer {
+    flex: 1;
+    display: flex;
+}
+
+.controls-2-header {
+    flex: .5;
+    display: flex;
+    padding-top: 10px;
+}
+
+.power-button,
+.power-button-led,
+.power-button-text {
+    flex: 1;
+    display: flex;
+}
+
+.power-button-ledlight {
+    flex: 1;
+    height: 15px;
+    background-color: greenyellow;
+    border: 2px solid rgb(125, 177, 48);
+    border-radius: 50%;
+    margin: 8px 2px 45px 100px;
+}
+
+.power-button-text {
+    padding: 5px;
+    justify-content: flex-start;
+    font-size: 18px;
+}
+
+.controls-2-button {
+    display: flex;
+}
+
+.controls-2-button button {
+    border-radius: 50%;
+}
+
+.eraser-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 20px 30px
+}
+
+.clear-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px 50px 20px
+}
+.eraser-button button {
+    padding: 20px 8px 20px 8px;
+}
+
+.clear-button button {
+    padding: 20px 10px 20px 10px;
+}
+
+.controls-2-button,
+.controls-2-footer {
+    flex: 1;
+    display: flex;
+}
+
+.controls-2-footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 50px 20px 30px;
+}
+
+.footer-line {
+    flex: 1;
+    padding: 5px;
+    background-color: rgb(56, 18, 83);
+    border-radius: 50px;
+    transform: rotate(-15deg);
+    margin-right: 40px;
+}
+
+.arrow-button {
+    background-color: rgb(85, 19, 133);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 0 40px 0 40px;
+    gap: 10px;
+    padding: 10px;
+    border: 10px solid rgb(56, 18, 83);
+}
+
+.left-right-button {
+    display: flex;
+    gap: 20px;
+}
+
+.controls-1-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-right: 40px;
+    gap: 10px;
+}
+
+.controls-1-footer button {
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.footer-start, 
+.footer-color {
+    display: flex;
+    border: 2px solid  rgb(56, 18, 83);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.screen {
+    flex: 2;
+    border-top: 30px;
+    border-left: 30px;
+    border-right: 30px;
+    border-bottom: 50px;
+    border-color: rgb(36, 36, 36);
+    border-style: solid;
+    border-radius: 20px;
+    background-color: black;
+    min-width: 500px;
+}
+
+.footer {
+    flex: 1;
+    display: flex;
+    min-height: 80px;
+}
+
+.footer-left,
+.footer-right {
+    flex: 0.8;
+    display: flex;
+}
+
+.footer-left-1, 
+.footer-right-2 {
+    flex: 0.14;
+    margin-bottom: 68px;
+
+}
+
+.controls-1 {
+    border-radius: 0 0 0 10%;
+}
+
+.controls-2 {
+    border-radius: 0 0 10% 0;
+}
+
+.footer-left-1 {
+    border-radius: 0 0 0 100%;
+}
+
+.footer-right-2 {
+    border-radius: 0 0 100% 0;
+}
+
+.footer-left-2, 
+.footer-right-1 {
+    flex: 1.5;
+    margin-bottom: 30px;
+    background-color: rgb(85, 19, 133);
+}
+
+.footer-left-2 {
+    border-radius: 0 0 0 100%;
+}
+
+.footer-right-1 {
+    border-radius: 0 0 100% 0;
+}
+
+.footer-center {
+    flex: 2;
+    background-color: rgb(85, 19, 133);
+    border-radius: 0 0 40% 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    gap: 5px;
+}
+
+.footer-center-text {
+    color: #b7b7a7;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 60%;
+    height: 12px;
+    background: rgb(56, 18, 83);
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 12px;
+    background: rgb(0, 0, 0);
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: rgb(85, 19, 133);
+    cursor: pointer;
+}
+
+button {
+    font-family: 'ARCADECLASSIC';
+    padding: 5px;
+    background-color: #b7b7a7;
+}
+
+button:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Etch-a-Sketch</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-bg-1">
+                        <div class="header-white-left-1"></div>
+                    </div>
+                    <div class="header-left-bg-2">
+                        <div class="header-white-left-2"></div>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <div class="header-text">Etch - a - Sketch</div>
+                </div>
+                <div class="header-right">
+                    <div class="header-right-bg-1">
+                        <div class="header-white-right-1"></div>
+                    </div>
+                    <div class="header-right-bg-2">
+                        <div class="header-white-right-2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="controls-1">
+                    <div class="controls-1-header"></div>
+                    <div class="arrow-button">
+                        <button type="submit">Color</button>
+                        <div class="left-right-button">
+                            <button type="submit">Darken</button>
+                            <button type="submit">Lighten</button>
+                        </div>
+                        <button type="submit">Rainbow</button>
+                    </div>
+                    <div class="controls-1-footer">
+                        <div class="footer-start">
+                            <div class="start-button-text" >Start</div>
+                            <button class="start-button" type="submit"></button>
+                        </div>
+                        <div class="footer-color">
+                            <div class="color-chooser-text">Pick Color</div>
+                            <button class="color-button" type="submit"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen"></div>
+                <div class="controls-2">
+                    <div class="controls-2-header">
+                        <div class="power-button">
+                            <div class="power-button-led">
+                                <div class="power-button-ledlight"></div>
+                            </div>
+                            <div class="power-button-text">Power</div>
+                        </div>
+                    </div>
+                    <div class="controls-2-button">
+                        <div class="eraser-button">
+                            <button type="submit">Eraser</button>
+                        </div>
+                        <div class="clear-button">
+                            <button type="submit">Clear</button>
+                        </div>
+                    </div>
+                    <div class="controls-2-footer">
+                        <div class="footer-line"></div>
+                        <div class="footer-line"></div>
+                        <div class="footer-line"></div>
+                        <div class="footer-line"></div>
+                        <div class="footer-line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-left">
+                    <div class="footer-left-1"></div>
+                    <div class="footer-left-2"></div>
+                </div>
+                <div class="footer-center">
+                    <div class="footer-center-text">16x16 pixels wide</div>
+                    <input class="slider" type="range" min="1" max="100" value="16">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-right-1"></div>
+                    <div class="footer-right-2"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./js/script.js" async defer></script>
+    </body>
+</html>
