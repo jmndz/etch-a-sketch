@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: orangered;
+    background-color: black;
     background-image: url('../img/night.jpg');
     background-position: 0;
     background-size: cover;
@@ -267,7 +267,7 @@ body {
     gap: 8px;
 }
 
-.color-button {
+#color-button {
     border-radius: 50%;
     height: 20px;
     width: 22px;
@@ -413,4 +413,8 @@ button:hover{
 
 .arrow-button button {
     padding: 8px;
+}
+
+.grid-changeColor {
+    background-color: red;
 }
