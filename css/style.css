@@ -25,7 +25,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    margin: 50px 150px 50px 150px;
+    margin: 15px 30px 15px 30px;
 
 }
 
@@ -68,7 +68,7 @@ body {
 .header-white-right-1,
 .header-white-right-2 {
     flex: 1;
-    background-color: #b7b7a7;
+    background-color: #ccccc1;
 }
 
 .header-white-left-2,
@@ -117,7 +117,7 @@ body {
 .content {
     flex: 3;
     display: flex;
-    min-height: 350px;
+    min-height: 450px;
     background: linear-gradient(to right, rgb(0, 0, 0, 0) 10%, 
                                           rgb(85, 19, 133)20%,  
                                           rgb(85, 19, 133)80%,
@@ -159,10 +159,14 @@ body {
 .power-button-ledlight {
     flex: 1;
     height: 15px;
+    background-color: red;
+    border: 2px solid rgb(133, 21, 21);
+    /* power on
     background-color: greenyellow;
     border: 2px solid rgb(125, 177, 48);
+    */
     border-radius: 50%;
-    margin: 8px 2px 45px 100px;
+    margin: 8px 2px 45px 130px;
 }
 
 .power-button-text {
@@ -183,7 +187,7 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-    padding: 60px 0 20px 30px
+    padding: 80px 0 20px 30px
 }
 
 .clear-button {
@@ -230,14 +234,14 @@ body {
     justify-content: center;
     border-radius: 100%;
     margin: 0 40px 0 40px;
-    gap: 10px;
+    gap: 25px;
     padding: 10px;
     border: 10px solid rgb(56, 18, 83);
 }
 
 .left-right-button {
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 .controls-1-footer {
@@ -264,15 +268,25 @@ body {
 
 .screen {
     flex: 2;
-    border-top: 30px;
-    border-left: 30px;
-    border-right: 30px;
-    border-bottom: 50px;
+    border-top: 20px;
+    border-left: 20px;
+    border-right: 20px;
+    border-bottom: 30px;
     border-color: rgb(36, 36, 36);
     border-style: solid;
     border-radius: 20px;
     background-color: black;
     min-width: 500px;
+    display: flex;
+}
+
+
+.screen-center {
+    flex:1;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
 
 .footer {
@@ -374,9 +388,19 @@ body {
 button {
     font-family: 'ARCADECLASSIC';
     padding: 5px;
-    background-color: #b7b7a7;
+    background-color:#ccccc1;
 }
 
 button:hover{
     cursor: pointer;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1px;
+}
+
+.arrow-button button {
+    padding: 8px;
 }
