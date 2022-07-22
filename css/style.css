@@ -264,6 +264,13 @@ body {
     border: 2px solid  rgb(56, 18, 83);
     border-radius: 20px;
     padding: 5px;
+    gap: 8px;
+}
+
+.color-button {
+    border-radius: 50%;
+    height: 20px;
+    width: 22px;
 }
 
 .screen {
@@ -389,10 +396,13 @@ button {
     font-family: 'ARCADECLASSIC';
     padding: 5px;
     background-color:#ccccc1;
+    transition: transform 0.3s;
 }
 
 button:hover{
     cursor: pointer;
+    background-color: white;
+    transform: scale(1.02);
 }
 
 .grid-item {

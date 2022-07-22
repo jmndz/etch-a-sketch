@@ -29,7 +29,7 @@ function makeGrid(size){
 function changeGrid(){
     newSize = slider.value;
     makeGrid(newSize);
-    sizeText.textContent = `${newSize}x${newSize} pixels wide`
+    sizeText.textContent = `${newSize} x ${newSize} pixels wide`
 }
 
 makeGrid(defaultSize);
