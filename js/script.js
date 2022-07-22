@@ -7,11 +7,20 @@ const colorPicker = document.querySelector('#color-button');
 const gridChangeColor = document.querySelector('.grid-changeColor');
 const clearButton = document.querySelector('#clear-btn');
 clearButton.addEventListener('click', clear);
+const eraserButton = document.querySelector('#eraser-btn');
+eraserButton.addEventListener('click', erase);
+const colorButton = document.querySelector('#color-btn');
+colorButton.addEventListener('click', color);
 
 const defaultSize = 16;
 let newSize = 0;
 let tempSize = 0;
 let sketchClick = false;
+let colorMode = true;
+let darkenMode = false;
+let lightenMode = false;
+let rainbowMode = false;
+let eraserMode = false;
 
 function sketch(){
     const grid = document.querySelectorAll('.grid-item');
@@ -21,19 +30,37 @@ function sketch(){
     console.log(sketchClick);
     
     grid.forEach( item => item.addEventListener('mouseenter', function () {
-        if(sketchClick === true){
-            gridChangeColor.style.backgroundColor = colorPicker.value;
-            this.classList.add('grid-changeColor');
+        if(sketchClick === true && eraserMode === false){
+            this.style.backgroundColor = colorPicker.value;
         }
     }))
     
+}
+
+colorPicker.onchange = function (){
+    gridChangeColor.style.backgroundColor = colorPicker.value;
+}
+
+function color(){
+    colorMode = true;
+    eraserMode = false;
+}
+
+function erase(){
+    eraserMode = true;
+
+    const grid = document.querySelectorAll('.grid-item');
+    grid.forEach( item => item.addEventListener('mouseenter', function () {
+        this.style.backgroundColor = 'white';
+    }))
+
 }
 
 function clear(){
     const grid = document.querySelectorAll('.grid-item');
 
     grid.forEach(function(item){
-        item.classList.remove('grid-changeColor');
+        item.style.backgroundColor = 'white';
     })
 }
 
